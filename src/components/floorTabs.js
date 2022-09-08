@@ -1,7 +1,7 @@
 import { Box, Button } from '@mui/material';
 import { useState } from 'react';
 import  data from '../assets/buildingData.json';
-import { FloorTable } from './floorTable';
+import { Floor } from './floors';
 
 export function FloorTabs() {
   // const [currentFloorName, setCurrentFloorName] = useState(0)
@@ -37,7 +37,7 @@ export function FloorTabs() {
           </Box>
           )
       })}
-      <FloorTable floorData={data.floors[currentFloorLevel]}/>
+      <Floor floorData={data.floors[currentFloorLevel]}/>
     </Box>
   );
 }
