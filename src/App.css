@@ -1,17 +1,7 @@
-.App {
+/* .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: whitesmoke;
@@ -26,13 +16,69 @@
 
 .App-link {
   color: #61dafb;
+} */
+
+.floor-border {
+  padding: 10px;
+  width: 70vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.floor-nav {
+  font-size: 100;
+  padding: 10px
+}
+
+.header-text {
+  font-size: 50px;
+  font-family:'Courier New', Courier, monospace ;
+  padding-left: 35vh;
+
+}
+
+.logo {
+  width: 20%;
+  height: 20%;
+}
+
+.unit-border {
+  border-top: 3px solid darkgray;
+  padding-top: 10px;
+  padding: 20px
+}
+
+.space-border {
+  border-top: 3px solid darkgray;
+  padding-top: 10px;
+}
+
+.space {
+  margin-left: 30px;
+}
+
+.radiator-border {
+  border-top: 3px solid darkgray;
+  border-bottom: 3px solid darkgray;
+  padding-top: 10px;
+}
+
+.radiator {
+  margin-left: 30px;
+}
+
+.node-border {
+  border-top: 3px solid darkgray;
+  padding-top: 10px;
+}
+
+.node {
+  /* padding-left: 50px; */
+  /* margin-left: 30px; */
+}
+
+.node-warning {
+  color: #a64452
+}
+
+.node-normal {
+  color: darkblue
 }

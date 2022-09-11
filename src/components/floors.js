@@ -4,11 +4,13 @@ import { Unit } from './units';
 export function Floor(props) {
 const {floorData} = props
 
-  console.log('FLOORRRR', floorData )
   return (
-    <Box>
+    <Box className="floor-border">
       <h1>Floor {floorData.name}</h1>
-      <Unit unitData={floorData.units} />
+      <Unit
+        unitData={floorData.units}
+        floorSpaceData={floorData.spaces}
+      />
     </Box>
   );
 }

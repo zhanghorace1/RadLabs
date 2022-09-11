@@ -4,12 +4,12 @@ import { Radiator } from './radiator';
 export function Space(props) {
 const {spaceData} = props
 
-  console.log('SPACEEE', spaceData )
   return (
-    <Box>
+    <Box className="space-border">
       {spaceData.map((space) => {
+        if (space.radiators.length === 0) {space.radiators.push({number: 0})}
         return (
-          <Box>
+          <Box className='space'>
             <h3>
               Space: {space.name}
             </h3>
