@@ -4,7 +4,6 @@ import  data from '../assets/buildingData.json';
 import { Floor } from './floors';
 
 export function FloorTabs() {
-  // const [currentFloorName, setCurrentFloorName] = useState(0)
   const [currentFloorLevel, setCurrentFloorLevel] = useState(0)
 
 
@@ -19,25 +18,40 @@ export function FloorTabs() {
 
   const handleClick = (event) => {
     const selectedFloorName = event.target.textContent
-    // setCurrentFloorName(selectedFloorName)
     mapFloorNameToLevel(selectedFloorName)
   }
   return (
-    <Box
-      style={{ display: "flex", flexDirection: 'row', padding: 10, margin: 10, justifyContent:"center" }}
-    >
-      {data.floors.map((floor)=> {
-        return (
-          <Box>
-            <Button
-            onClick={handleClick}
-            >
-              {floor.name}
-            </Button>
-          </Box>
-          )
-      })}
-      <Floor floorData={data.floors[currentFloorLevel]}/>
+    <Box>
+      <Box
+        style={{
+          display: "flex",
+          flexDirection: 'row',
+          justifyContent:'center',
+        }}
+      >
+        {data.floors.map((floor)=> {
+          return (
+            <Box key={floor.name}>
+              <Button
+              variant="contained"
+              onClick={handleClick}
+              style={{padding: 5, margin: 10, backgroundColor: '#efbb41' }}
+              >
+                {floor.name}
+              </Button>
+            </Box>
+            )
+        })}
+      </Box>
+      <Box
+        style={{
+         display: "flex",
+         flexDirection: 'row',
+         justifyContent:'center',
+        }}
+      >
+        <Floor floorData={data.floors[currentFloorLevel]}/>
+      </Box>
     </Box>
   );
 }
