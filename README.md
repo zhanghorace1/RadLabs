@@ -4,5 +4,5 @@
 ### Clone repository
 ### Run `npm install`
 ### Run `npm start`
-### Open localhost:3000 in browser
+### Open `localhost:3000` in browser
 
