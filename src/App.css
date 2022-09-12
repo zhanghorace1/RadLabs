@@ -1,25 +1,4 @@
-/* .App {
-  text-align: center;
-}
-
-
-.App-header {
-  background-color: whitesmoke;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-} */
-
 .floor-border {
-  padding: 10px;
   width: 70vh;
 }
 
@@ -32,7 +11,7 @@
   font-size: 50px;
   font-family:'Courier New', Courier, monospace ;
   padding-left: 35vh;
-
+  text-decoration: underline;
 }
 
 .logo {
@@ -41,14 +20,12 @@
 }
 
 .unit-border {
-  border-top: 3px solid darkgray;
-  padding-top: 10px;
-  padding: 20px
+  border-top: 3px solid #efbb41;
+
 }
 
 .space-border {
-  border-top: 3px solid darkgray;
-  padding-top: 10px;
+  border-top: 3px solid #efbb41;
 }
 
 .space {
@@ -56,9 +33,8 @@
 }
 
 .radiator-border {
-  border-top: 3px solid darkgray;
-  border-bottom: 3px solid darkgray;
-  padding-top: 10px;
+  border-top: 3px solid #efbb41;
+  border-bottom: 3px solid #efbb41;
 }
 
 .radiator {
@@ -66,13 +42,7 @@
 }
 
 .node-border {
-  border-top: 3px solid darkgray;
-  padding-top: 10px;
-}
-
-.node {
-  /* padding-left: 50px; */
-  /* margin-left: 30px; */
+  border-top: 3px solid #efbb41;
 }
 
 .node-warning {

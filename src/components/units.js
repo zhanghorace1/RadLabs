@@ -10,7 +10,7 @@ const {unitData, floorSpaceData } = props
       {floorSpaceData ?
         floorSpaceData.map((floorSpace) => {
           return (
-            <Box>
+            <Box key={floorSpace.name}>
               <h2>
                 Location: {floorSpace.name}
               </h2>
@@ -24,7 +24,7 @@ const {unitData, floorSpaceData } = props
 {/* SPACES BELONGING TO UNITS */}
       {unitData.map((unit) => {
         return (
-          <Box>
+          <Box key={unit.name}>
             <h2>
               Unit: {unit.name}
             </h2>

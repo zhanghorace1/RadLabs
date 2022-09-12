@@ -10,7 +10,7 @@ const {radiatorData} = props
         if (radiator.number > 0) {
           if (radiator.nodes.length === 0) {radiator.nodes.push({offline: 'RADIATOR NOT INSTALLED OR OFFLINE'})}
           return (
-            <Box className='radiator' >
+            <Box key={radiator.number} className='radiator' >
               <h4>
                 Radiator #: {radiator.number}
               </h4>

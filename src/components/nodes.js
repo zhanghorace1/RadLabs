@@ -7,7 +7,7 @@ const {nodeData} = props
     <Box className='node-border'>
       {nodeData?.map((node) => {
         return (
-          <Box className='node'>
+          <Box key={node.lora_euid} className='node'>
             {node.offline ?
               <h5 className='node-warning'>
                 {node.offline}

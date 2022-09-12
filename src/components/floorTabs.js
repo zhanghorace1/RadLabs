@@ -31,7 +31,7 @@ export function FloorTabs() {
       >
         {data.floors.map((floor)=> {
           return (
-            <Box>
+            <Box key={floor.name}>
               <Button
               variant="contained"
               onClick={handleClick}
